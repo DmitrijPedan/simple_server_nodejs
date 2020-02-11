@@ -13,9 +13,9 @@ module.exports = (req,res) => {
     }
     if (url[0] in routesMap) {
         if (url[1] && url[0] === 'posts') {
-            return res.end(htmlCreator(`This is post id: ${url[1]} page`, routesMap[url[0]][1], url[1]));
+            return res.end(htmlCreator(`This is post id: ${url[1]} page`, routesMap[url[0]][1], url[1])); // posts/id
         }
-        return res.end(htmlCreator(routesMap[url[0]][0], routesMap[url[0]][1], url[0]));
+        return res.end(htmlCreator(routesMap[url[0]][0], routesMap[url[0]][1], url[0])); // home, posts, about
     } else {
         return res.end(htmlCreator("Page not found, error 404", 'error', 'Error'));
     }
