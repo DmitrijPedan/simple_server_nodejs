@@ -1,0 +1,13 @@
+module.exports = [
+    {id: 1, title: 'first post', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi molestias ea atque eveniet eos aspernatur beatae harum ex nemo nesciunt, labore nisi eligendi voluptas mollitia dolor a ad quia consequuntur.'},
+    {id: 2, title: 'second post', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi molestias ea atque eveniet eos aspernatur beatae harum ex nemo nesciunt, labore nisi eligendi voluptas mollitia dolor a ad quia consequuntur.'},
+    {id: 3, title: 'any post', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi molestias ea atque eveniet eos aspernatur beatae harum ex nemo nesciunt, labore nisi eligendi voluptas mollitia dolor a ad quia consequuntur.'},
+    {id: 4, title: 'My post', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi molestias ea atque eveniet eos aspernatur beatae harum ex nemo nesciunt, labore nisi eligendi voluptas mollitia dolor a ad quia consequuntur.'},
+    {id: 5, title: 'Our post', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi molestias ea atque eveniet eos aspernatur beatae harum ex nemo nesciunt, labore nisi eligendi voluptas mollitia dolor a ad quia consequuntur.'},
+    {id: 6, title: 'Lorem post', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi molestias ea atque eveniet eos aspernatur beatae harum ex nemo nesciunt, labore nisi eligendi voluptas mollitia dolor a ad quia consequuntur.'},
+    {id: 7, title: 'Best_post!', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi molestias ea atque eveniet eos aspernatur beatae harum ex nemo nesciunt, labore nisi eligendi voluptas mollitia dolor a ad quia consequuntur.'},
+    {id: 8, title: 'Bad post', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi molestias ea atque eveniet eos aspernatur beatae harum ex nemo nesciunt, labore nisi eligendi voluptas mollitia dolor a ad quia consequuntur.'},
+    {id: 9, title: 'SuperPost', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi molestias ea atque eveniet eos aspernatur beatae harum ex nemo nesciunt, labore nisi eligendi voluptas mollitia dolor a ad quia consequuntur.'},
+    {id: 10, title: 'post', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi molestias ea atque eveniet eos aspernatur beatae harum ex nemo nesciunt, labore nisi eligendi voluptas mollitia dolor a ad quia consequuntur.'},
+    {id: 11, title: '13 post', content: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi molestias ea atque eveniet eos aspernatur beatae harum ex nemo nesciunt, labore nisi eligendi voluptas mollitia dolor a ad quia consequuntur.'},
+];
