@@ -1,4 +1,3 @@
-const postsArray = require('../posts')
 const arrViews = {
     home: require('./_home'),
     posts: require('./_posts'),
