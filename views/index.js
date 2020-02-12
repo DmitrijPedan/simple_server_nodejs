@@ -1,13 +1,15 @@
+const postsArray = require('../posts')
 const arrViews = {
     home: require('./_home'),
     posts: require('./_posts'),
+    post: require('./_post-page'),
     about: require('./_about'),
     error: require('./_error'),
 }
 
-module.exports = function htmlCreator (content, view = '_error', title) {
+module.exports = function htmlCreator (content, view = '_error', title, postId) {
 
-    const htmlContent = arrViews[view](`${content}`);
+    const htmlContent = arrViews[view](`${content}`, `${postId}`);
 
     return `
     <!DOCTYPE html>
