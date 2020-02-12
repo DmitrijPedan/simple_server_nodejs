@@ -1,6 +1,8 @@
 const htmlCreator = require('./views');
 const postsArray = require('./posts');
-let testpost = postsArray
+
+const slug = text => text.match(/[A-z\s]/g).join("").replace(/post/g, 'Post').replace(/\s+/g, '-')
+
 module.exports = (req,res) => {
   
     const url = req.url.match(/[^/]{1,}/g);
@@ -14,9 +16,9 @@ module.exports = (req,res) => {
     }
     if (url[0] in routesMap) {
         if (url[0] === 'posts' && url[1] in postsArray) {
-            return res.end(htmlCreator(`Post id: ${url[1]}`, 'post', url[1], url[1])); // posts/id
+            return res.end(htmlCreator(`Post id: ${url[1]}`, 'post', slug(postsArray[url[1]].title), url[1] )); // posts/id
         }
-        return res.end(htmlCreator(routesMap[url[0]][0], routesMap[url[0]][1], url[0])); // home, posts, about
+        return res.end(htmlCreator(routesMap[url[0]][0], routesMap[url[0]][1], `${url[0]} page`)); // home, posts, about
     } else {
         return res.end(htmlCreator("Page not found, error 404", 'error', 'Error'));
     }
