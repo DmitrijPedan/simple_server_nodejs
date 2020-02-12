@@ -3,9 +3,9 @@ const postsArray = require('./posts');
 const slug = require('./slug');
 
 module.exports = (req,res) => {
-  
+    console.log(req.url);
     const url = req.url.match(/[^/]{1,}/g);
-    console.log(url);
+    
     switch (true) {
         case (!Array.isArray(url) || url[0] === 'home' && !url[1]):
             return res.end(htmlCreator("This is home page", 'home', 'Home page'));
